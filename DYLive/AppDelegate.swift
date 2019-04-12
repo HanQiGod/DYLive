@@ -2,8 +2,10 @@
 //  AppDelegate.swift
 //  DYLive
 //
-//  Created by 君凯商联网 on 2019/4/12.
-//  Copyright © 2019 君凯商联网. All rights reserved.
+//  Created by Mr_Han on 2019/4/12.
+//  Copyright © 2019 Mr_Han. All rights reserved.
+//  CSDN <https://blog.csdn.net/u010960265>
+//  GitHub <https://github.com/HanQiGod>
 //
 
 import UIKit
