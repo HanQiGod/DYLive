@@ -28,8 +28,9 @@ extension UIBarButtonItem {
     
     // 方法二：构造函数
     // 便利构造函数: 1> 以 convenience 开头   2> 在构造函数中必须明确调用一个设计的构造函数(self)
-    convenience init(imageName: String, highImageName: String = "", size: CGSize = CGSize(width: 0, height: 0)) {
+    convenience init(imageName: String, highImageName: String = "", size: CGSize = CGSize.zero) {
         
+        print(size)
         //1. 创建 UIButton
         let btn = UIButton()
         
@@ -40,8 +41,8 @@ extension UIBarButtonItem {
         }
         
         //3. 设置 btn 尺寸
-        if size == CGSize(width: 0, height: 0) {
-            btn.frame = CGRect(origin: CGPoint(x: 0, y: 0), size: size)
+        if size == CGSize.zero {
+            btn.frame = CGRect(origin: CGPoint.zero, size: size)
         }
         
         //4. 创建 UIBarButtonItem
