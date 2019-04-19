@@ -70,6 +70,12 @@
                 <constraint firstItem="HFi-3l-unv" firstAttribute="leading" secondItem="ZQO-kR-hG0" secondAttribute="trailing" constant="5" id="uj6-Po-tox"/>
             </constraints>
             <size key="customSize" width="249" height="149"/>
+            <connections>
+                <outlet property="iconImageView" destination="7vK-OW-1Q6" id="xUq-UF-6ct"/>
+                <outlet property="nickNameLabel" destination="tgX-kW-A2c" id="xqT-mp-4bA"/>
+                <outlet property="onlineBtn" destination="029-Xg-TcQ" id="FcU-N6-CUf"/>
+                <outlet property="roomNameLabel" destination="HFi-3l-unv" id="uod-Cm-Vu0"/>
+            </connections>
             <point key="canvasLocation" x="123.91304347826087" y="137.61160714285714"/>
         </collectionViewCell>
     </objects>

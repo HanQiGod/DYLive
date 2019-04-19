@@ -32,6 +32,11 @@ class AnchorGroupModel: NSObject {
     @objc lazy var anchors : [AnchorModel] = [AnchorModel]()
     
     
+    // MARK: 构造函数
+    override init() {
+        
+    }
+    
     init(dict : [String : NSObject]) {
         super.init()
         
