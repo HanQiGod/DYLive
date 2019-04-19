@@ -14,6 +14,7 @@ class RecommendViewModel {
     
     // MARK: 懒加载属性
     lazy var anchorGroups : [AnchorGroupModel] = [AnchorGroupModel]()
+    lazy var cycleModels : [CycleModel] = [CycleModel]()
     private lazy var bigDataGroup : AnchorGroupModel = AnchorGroupModel()
     private lazy var prettyDataGroup : AnchorGroupModel = AnchorGroupModel()
 
@@ -23,6 +24,7 @@ class RecommendViewModel {
 // MARK: 发送网络请求
 extension RecommendViewModel {
     
+    // 请求推荐数据
     func requestData(finishCallback: @escaping () -> ()) {
         
         //0. 定义参数
@@ -125,5 +127,30 @@ extension RecommendViewModel {
         
         
     }
+    
+    
+    // 请求无限轮播的数据
+    // http://capi.douyucdn.cn/api/v1/slide/6?version=2.300
+    func requestCycleData(finishCallback : @escaping () -> ()) {
+        
+        NetWorkTools.requestData(type: .get, URLString: "http://capi.douyucdn.cn/api/v1/slide/6", parameters: ["version":"2.300"]) { (result) in
+            
+            //1. 获取整体的字典数据
+            guard let resultDict = result as? [String : NSObject] else { return }
+            
+            //2. 根据字典的 key 获取 data 数据
+            guard let dataArray = resultDict["data"] as? [[String : NSObject]] else { return }
+            
+            //3. 字典转模型对象
+            for dict in dataArray {
+                self.cycleModels.append(CycleModel(dict: dict))
+            }
+            
+            finishCallback()
+            
+        }
+        
+    }
+    
     
 }
