@@ -84,7 +84,7 @@ extension RecommendGameView : UICollectionViewDataSource {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kGameCellID, for: indexPath) as! CollectionGameCell
         
-        cell.group = groups![indexPath.item]
+        cell.baseGame = groups![indexPath.item]
         
         return cell
     }

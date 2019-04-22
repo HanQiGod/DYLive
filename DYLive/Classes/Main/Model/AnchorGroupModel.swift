@@ -10,7 +10,7 @@
 
 import UIKit
 
-class AnchorGroupModel: NSObject {
+class AnchorGroupModel: BaseGameModel {
     
     // 注意：属性前需要添加 @objc，否者转换模型失败
     /// 该组中对应的房间信息
@@ -24,29 +24,10 @@ class AnchorGroupModel: NSObject {
         }
         
     }
-    /// 组显示的标题
-    @objc var tag_name : String = ""
     /// 组显示的图标
     @objc var icon_name : String = "home_header_normal"
-    /// 游戏对应的图标
-    @objc var icon_url : String = ""
     /// 定义主播的模型对象数组
     @objc lazy var anchors : [AnchorModel] = [AnchorModel]()
-    
-    
-    // MARK: 构造函数
-    override init() {
-        
-    }
-    
-    init(dict : [String : NSObject]) {
-        super.init()
-        
-        setValuesForKeys(dict)
-    }
-    
-    override func setValue(_ value: Any?, forUndefinedKey key: String) {
-    }
     
     /* 方法一：
     override func setValue(_ value: Any?, forKey key: String) {
