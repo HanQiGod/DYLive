@@ -33,6 +33,7 @@
 		7AC53755226D9D48001CB912 /* AmuseMenuViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AC53753226D9D48001CB912 /* AmuseMenuViewCell.xib */; };
 		7AC53757226DAB38001CB912 /* FunnyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC53756226DAB38001CB912 /* FunnyViewController.swift */; };
 		7AC53759226DAE29001CB912 /* FunnyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC53758226DAE29001CB912 /* FunnyViewModel.swift */; };
+		7AC5375B226DBD71001CB912 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC5375A226DBD71001CB912 /* BaseViewController.swift */; };
 		7AF1CCEB22648068002DBE91 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF1CCEA22648068002DBE91 /* PageContentView.swift */; };
 		7AF1CCED22648331002DBE91 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF1CCEC22648331002DBE91 /* UIColor-Extension.swift */; };
 		7AF1CCEF2265AC24002DBE91 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF1CCEE2265AC24002DBE91 /* RecommendViewController.swift */; };
@@ -90,6 +91,7 @@
 		7AC53753226D9D48001CB912 /* AmuseMenuViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AmuseMenuViewCell.xib; sourceTree = "<group>"; };
 		7AC53756226DAB38001CB912 /* FunnyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyViewController.swift; sourceTree = "<group>"; };
 		7AC53758226DAE29001CB912 /* FunnyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyViewModel.swift; sourceTree = "<group>"; };
+		7AC5375A226DBD71001CB912 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		7AF1CCEA22648068002DBE91 /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		7AF1CCEC22648331002DBE91 /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		7AF1CCEE2265AC24002DBE91 /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
@@ -252,9 +254,9 @@
 			children = (
 				7A0F0640226089F900DD89F5 /* Main.storyboard */,
 				7AC53749226D67BC001CB912 /* ViewModel */,
-				7A0F066B22609A2D00DD89F5 /* Contoller */,
 				7A0F066922609A2D00DD89F5 /* Model */,
 				7A0F066A22609A2D00DD89F5 /* View */,
+				7A0F066B22609A2D00DD89F5 /* Contoller */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -288,6 +290,7 @@
 			children = (
 				7A0F066C22609A2D00DD89F5 /* MainViewController.swift */,
 				7AC5374C226D6C68001CB912 /* BaseAnchorViewController.swift */,
+				7AC5375A226DBD71001CB912 /* BaseViewController.swift */,
 			);
 			path = Contoller;
 			sourceTree = "<group>";
@@ -558,6 +561,7 @@
 				7AC53748226D624F001CB912 /* AmuseViewModel.swift in Sources */,
 				7AF1CCF22265D981002DBE91 /* CollectionHeaderView.swift in Sources */,
 				7AF1CD3E2269C6AF002DBE91 /* GameViewModel.swift in Sources */,
+				7AC5375B226DBD71001CB912 /* BaseViewController.swift in Sources */,
 				7AF1CCED22648331002DBE91 /* UIColor-Extension.swift in Sources */,
 				7AC5374D226D6C68001CB912 /* BaseAnchorViewController.swift in Sources */,
 				7AF1CD3C2269B8CF002DBE91 /* GameViewController.swift in Sources */,

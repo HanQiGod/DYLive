@@ -23,7 +23,7 @@ private let kHeaderViewID = "kHeaderViewID"
 let kPrettyCellID = "kPrettyCellID"
 
 
-class BaseAnchorViewController: UIViewController {
+class BaseAnchorViewController: BaseViewController {
 
     // MARK: 定义属性
     var baseVM : BaseViewModel!
@@ -69,8 +69,16 @@ class BaseAnchorViewController: UIViewController {
 // MARK: 设置 UI 界面
 extension BaseAnchorViewController {
     
-    @objc func setUpUI() {
+    override func setUpUI() {
+        
+        //1. 给父类中内容 View 的引用进行赋值
+        contentView = collectionView
+        
+        //2. 再添加 collectionView
         view.addSubview(collectionView)
+        
+        //3. 再调用 super
+        super.setUpUI()
     }
     
 }
