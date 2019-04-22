@@ -1,8 +1,8 @@
 //
-//  RecommendGameView.swift
+//  AmuseMenuViewCell.swift
 //  DYLive
 //
-//  Created by Mr_Han on 2019/4/19.
+//  Created by Mr_Han on 2019/4/22.
 //  Copyright © 2019 Mr_Han. All rights reserved.
 //  CSDN <https://blog.csdn.net/u010960265>
 //  GitHub <https://github.com/HanQiGod>
@@ -10,62 +10,41 @@
 
 import UIKit
 
-private let kEdgeInsetMargin : CGFloat = 10.0
-
 private let kGameCellID = "kGameCellID"
 
-
-class RecommendGameView: UIView {
+class AmuseMenuViewCell: UICollectionViewCell {
     
-    // MARK: 定义数据属性
-    var groups : [BaseGameModel]? {
-        
+    // MARK: 定义属性
+    var groups : [AnchorGroupModel]? {
         didSet {
-
-            // 刷新
             collectionView.reloadData()
-            
         }
-        
     }
-    
-    // 控件属性
+
     @IBOutlet weak var collectionView: UICollectionView!
     
-
     override func awakeFromNib() {
         super.awakeFromNib()
+        // Initialization code
         
-        // 设置该控件不随父控件拉伸而拉伸，即设置为none或者空[]
-        autoresizingMask = []
-        
-        // 注册 cell
         collectionView.register(UINib(nibName: "CollectionGameCell", bundle: nil), forCellWithReuseIdentifier: kGameCellID)
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
         
-        // 给 collectionView 添加内边距
-        collectionView.contentInset = UIEdgeInsets(top: 0, left: kEdgeInsetMargin, bottom: 0, right: kEdgeInsetMargin)
+        let layout = collectionView.collectionViewLayout as! UICollectionViewFlowLayout
+        let itemW = collectionView.bounds.width / 4
+        let itemH = collectionView.bounds.height / 2
+        layout.itemSize = CGSize(width: itemW, height: itemH)
         
     }
+    
 
 }
 
 
-// MARK: 快速创建的类方法
-extension RecommendGameView {
-    
-    class func recommendGameView() -> RecommendGameView {
-        return Bundle.main.loadNibNamed("RecommendGameView", owner: nil, options: nil)?.first as! RecommendGameView
-    }
-    
-}
-
-
-// MARK: 遵守 UICollectionViewDataSource 协议
-extension RecommendGameView : UICollectionViewDataSource {
-    
-    func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 1
-    }
+extension AmuseMenuViewCell : UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return groups?.count ?? 0
@@ -73,9 +52,12 @@ extension RecommendGameView : UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
+        //1. 取出 cell
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: kGameCellID, for: indexPath) as! CollectionGameCell
         
+        //2. 给 cell 设置数据
         cell.baseGame = groups![indexPath.item]
+        cell.clipsToBounds = true
         
         return cell
     }

@@ -10,10 +10,9 @@
 
 import UIKit
 
-class RecommendViewModel {
+class RecommendViewModel : BaseViewModel {
     
     // MARK: 懒加载属性
-    lazy var anchorGroups : [AnchorGroupModel] = [AnchorGroupModel]()
     lazy var cycleModels : [CycleModel] = [CycleModel]()
     private lazy var bigDataGroup : AnchorGroupModel = AnchorGroupModel()
     private lazy var prettyDataGroup : AnchorGroupModel = AnchorGroupModel()
@@ -94,24 +93,11 @@ extension RecommendViewModel {
         //进入组
         dispatchGroup.enter()
         // http://capi.douyucdn.cn/api/v1/getHotCate?limit=4&offset=0&time=1555492932
-        NetWorkTools.requestData(type: .get, URLString: "http://capi.douyucdn.cn/api/v1/getHotCate", parameters: parameters) { (result) in
+        loadAnchorData(isGroupData:true ,URLString: "http://capi.douyucdn.cn/api/v1/getHotCate", parameters: parameters) {
             
-            //3.1. 将 result 转成字典类型
-            guard let resultDic = result as? [String : NSObject] else { return }
-            
-            //3.2. 根据 data 该 key，获取数组
-            guard let dataArray = resultDic["data"] as? [[String : NSObject]] else { return }
-            
-            //3.3. 遍历数组，获取字典，并将字典转成模型对象
-            for dict in dataArray {
-                let group = AnchorGroupModel(dict: dict)
-                self.anchorGroups.append(group)
-            }
-            
-            //3.4 离开组
+            // 离开组
             dispatchGroup.leave()
             print("请求到3")
-            
         }
         
         
