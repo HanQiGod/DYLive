@@ -92,8 +92,8 @@ extension BaseAnchorViewController {
 }
 
 
-// MARK: 遵守 UICollectionViewDataSource & UICollectionViewDelegate 协议
-extension BaseAnchorViewController : UICollectionViewDataSource, UICollectionViewDelegate {
+// MARK: 遵守 UICollectionViewDataSource 协议
+extension BaseAnchorViewController : UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return baseVM.anchorGroups.count
@@ -121,6 +121,43 @@ extension BaseAnchorViewController : UICollectionViewDataSource, UICollectionVie
         headerView.group = baseVM.anchorGroups[indexPath.section]
         
         return headerView
+    }
+    
+}
+
+
+// MARK: 遵守 UICollectionViewDelegate 协议
+extension BaseAnchorViewController : UICollectionViewDelegate {
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        //1. 取出主播信息
+        let anchor = baseVM.anchorGroups[indexPath.section].anchors[indexPath.item]
+        
+        //2. 判断是秀场房间还是普通房间
+        anchor.isVertical == 0 ? pushNormalRoomVc() : presentShowRoomVc()
+        
+    }
+    
+    
+    private func presentShowRoomVc() {
+        
+        //1. 创建 Vc
+        let showRoomVc = RoomShowViewController()
+        
+        //2. 以 Model 的方式弹出
+        present(showRoomVc, animated: true, completion: nil)
+        
+    }
+    
+    private func pushNormalRoomVc() {
+        
+        //1. 创建 Vc
+        let normalRoomVc = RoomNormalViewController()
+        
+        //2. 以 Push 的方式弹出
+        navigationController?.pushViewController(normalRoomVc, animated: true)
+        
     }
     
 }

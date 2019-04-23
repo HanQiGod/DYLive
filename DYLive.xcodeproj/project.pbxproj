@@ -34,6 +34,9 @@
 		7AC53757226DAB38001CB912 /* FunnyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC53756226DAB38001CB912 /* FunnyViewController.swift */; };
 		7AC53759226DAE29001CB912 /* FunnyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC53758226DAE29001CB912 /* FunnyViewModel.swift */; };
 		7AC5375B226DBD71001CB912 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC5375A226DBD71001CB912 /* BaseViewController.swift */; };
+		7AC53761226E9BE0001CB912 /* RoomShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC53760226E9BE0001CB912 /* RoomShowViewController.swift */; };
+		7AC53763226E9C0E001CB912 /* RoomNormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC53762226E9C0E001CB912 /* RoomNormalViewController.swift */; };
+		7AC53765226EA080001CB912 /* CustomNavigationVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC53764226EA080001CB912 /* CustomNavigationVc.swift */; };
 		7AF1CCEB22648068002DBE91 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF1CCEA22648068002DBE91 /* PageContentView.swift */; };
 		7AF1CCED22648331002DBE91 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF1CCEC22648331002DBE91 /* UIColor-Extension.swift */; };
 		7AF1CCEF2265AC24002DBE91 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF1CCEE2265AC24002DBE91 /* RecommendViewController.swift */; };
@@ -92,6 +95,9 @@
 		7AC53756226DAB38001CB912 /* FunnyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyViewController.swift; sourceTree = "<group>"; };
 		7AC53758226DAE29001CB912 /* FunnyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunnyViewModel.swift; sourceTree = "<group>"; };
 		7AC5375A226DBD71001CB912 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		7AC53760226E9BE0001CB912 /* RoomShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomShowViewController.swift; sourceTree = "<group>"; };
+		7AC53762226E9C0E001CB912 /* RoomNormalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomNormalViewController.swift; sourceTree = "<group>"; };
+		7AC53764226EA080001CB912 /* CustomNavigationVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationVc.swift; sourceTree = "<group>"; };
 		7AF1CCEA22648068002DBE91 /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		7AF1CCEC22648331002DBE91 /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		7AF1CCEE2265AC24002DBE91 /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
@@ -189,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				7A0F065422608A5A00DD89F5 /* Main */,
+				7AC5375C226E9BA2001CB912 /* Room */,
 				7A0F064F22608A5A00DD89F5 /* Home */,
 				7A0F065322608A5A00DD89F5 /* Live */,
 				7A0F065122608A5A00DD89F5 /* Follow */,
@@ -289,8 +296,9 @@
 			isa = PBXGroup;
 			children = (
 				7A0F066C22609A2D00DD89F5 /* MainViewController.swift */,
-				7AC5374C226D6C68001CB912 /* BaseAnchorViewController.swift */,
 				7AC5375A226DBD71001CB912 /* BaseViewController.swift */,
+				7AC5374C226D6C68001CB912 /* BaseAnchorViewController.swift */,
+				7AC53764226EA080001CB912 /* CustomNavigationVc.swift */,
 			);
 			path = Contoller;
 			sourceTree = "<group>";
@@ -416,6 +424,39 @@
 				7AC5374A226D67CD001CB912 /* BaseViewModel.swift */,
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7AC5375C226E9BA2001CB912 /* Room */ = {
+			isa = PBXGroup;
+			children = (
+				7AC5375E226E9BA2001CB912 /* Model */,
+				7AC5375F226E9BA2001CB912 /* View */,
+				7AC5375D226E9BA2001CB912 /* Controller */,
+			);
+			path = Room;
+			sourceTree = "<group>";
+		};
+		7AC5375D226E9BA2001CB912 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7AC53760226E9BE0001CB912 /* RoomShowViewController.swift */,
+				7AC53762226E9C0E001CB912 /* RoomNormalViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7AC5375E226E9BA2001CB912 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7AC5375F226E9BA2001CB912 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		7AF1CD1E22671B8C002DBE91 /* ViewModel */ = {
@@ -561,6 +602,7 @@
 				7AC53748226D624F001CB912 /* AmuseViewModel.swift in Sources */,
 				7AF1CCF22265D981002DBE91 /* CollectionHeaderView.swift in Sources */,
 				7AF1CD3E2269C6AF002DBE91 /* GameViewModel.swift in Sources */,
+				7AC53765226EA080001CB912 /* CustomNavigationVc.swift in Sources */,
 				7AC5375B226DBD71001CB912 /* BaseViewController.swift in Sources */,
 				7AF1CCED22648331002DBE91 /* UIColor-Extension.swift in Sources */,
 				7AC5374D226D6C68001CB912 /* BaseAnchorViewController.swift in Sources */,
@@ -568,6 +610,7 @@
 				7AF1CCEF2265AC24002DBE91 /* RecommendViewController.swift in Sources */,
 				7A0F063D226089F900DD89F5 /* AppDelegate.swift in Sources */,
 				7AC53754226D9D48001CB912 /* AmuseMenuViewCell.swift in Sources */,
+				7AC53763226E9C0E001CB912 /* RoomNormalViewController.swift in Sources */,
 				7AC53757226DAB38001CB912 /* FunnyViewController.swift in Sources */,
 				7AF1CD1D226712C9002DBE91 /* NetWorkTools.swift in Sources */,
 				7A0F06802264635700DD89F5 /* PageTitleView.swift in Sources */,
@@ -589,6 +632,7 @@
 				7AF1CCFA2266B457002DBE91 /* CollectionPrettyCell.swift in Sources */,
 				7AF1CD392269A5F9002DBE91 /* CollectionGameCell.swift in Sources */,
 				7AF1CCF62265DDEC002DBE91 /* CollectionNormalCell.swift in Sources */,
+				7AC53761226E9BE0001CB912 /* RoomShowViewController.swift in Sources */,
 				7A0F067B2264547900DD89F5 /* HomeViewController.swift in Sources */,
 				7AF1CD2022671C51002DBE91 /* RecommendViewModel.swift in Sources */,
 				7AF1CD2622672FDD002DBE91 /* AnchorModel.swift in Sources */,

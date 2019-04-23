@@ -25,6 +25,7 @@ class BaseViewController: UIViewController {
         imageView.animationDuration = 0.5
         imageView.animationRepeatCount = LONG_MAX
         imageView.autoresizingMask = [.flexibleTopMargin, .flexibleBottomMargin]
+        imageView.isUserInteractionEnabled = false
         
         return imageView
     }()
@@ -56,6 +57,7 @@ extension BaseViewController {
         view.backgroundColor = UIColor(r: 250, g: 250, b: 250)
     }
     
+    
     func loadDataFinished() {
         
         //1. 停止动画
@@ -66,7 +68,6 @@ extension BaseViewController {
         
         //3. 显示 contentView
         contentView?.isHidden = false
-        
         
     }
     
