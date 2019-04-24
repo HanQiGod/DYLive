@@ -13,9 +13,11 @@ import UIKit
 private let kRoomShowHeaderViewH : CGFloat = 88.0
 private let kRoomShowFooterViewH : CGFloat = 88.0
 
+
 class RoomShowViewController: UIViewController {
     
-    fileprivate var roomShowHeaderView : RoomShowHeadView = {
+    // MARK: 懒加载属性
+    fileprivate lazy var roomShowHeaderView : RoomShowHeadView = {
         
         let roomShowHeaderView = RoomShowHeadView.roomShowHeadView()
         
@@ -24,7 +26,7 @@ class RoomShowViewController: UIViewController {
         return roomShowHeaderView
         
     }()
-    fileprivate var roomShowBottomView : RoomShowBottomView = {
+    fileprivate lazy var roomShowBottomView : RoomShowBottomView = {
         
         let roomShowBottomView = RoomShowBottomView.roomShowBottomView()
         
@@ -33,6 +35,7 @@ class RoomShowViewController: UIViewController {
         return roomShowBottomView
         
     }()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,7 +53,7 @@ extension RoomShowViewController {
     
     fileprivate func setUpUI() {
         
-        view.backgroundColor = .white
+        view.backgroundColor = .green
         roomShowHeaderView.roomShowVc = self
         view.addSubview(roomShowHeaderView)
         
