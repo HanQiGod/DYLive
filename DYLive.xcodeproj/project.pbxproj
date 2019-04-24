@@ -37,6 +37,10 @@
 		7AC53761226E9BE0001CB912 /* RoomShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC53760226E9BE0001CB912 /* RoomShowViewController.swift */; };
 		7AC53763226E9C0E001CB912 /* RoomNormalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC53762226E9C0E001CB912 /* RoomNormalViewController.swift */; };
 		7AC53765226EA080001CB912 /* CustomNavigationVc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC53764226EA080001CB912 /* CustomNavigationVc.swift */; };
+		7AC53787226EFC46001CB912 /* RoomShowHeadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC53786226EFC46001CB912 /* RoomShowHeadView.swift */; };
+		7AC53789226EFC5B001CB912 /* RoomShowBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC53788226EFC5B001CB912 /* RoomShowBottomView.swift */; };
+		7AC5378B226EFC81001CB912 /* RoomShowHeadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AC5378A226EFC81001CB912 /* RoomShowHeadView.xib */; };
+		7AC5378D226EFC8C001CB912 /* RoomShowBottomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7AC5378C226EFC8C001CB912 /* RoomShowBottomView.xib */; };
 		7AF1CCEB22648068002DBE91 /* PageContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF1CCEA22648068002DBE91 /* PageContentView.swift */; };
 		7AF1CCED22648331002DBE91 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF1CCEC22648331002DBE91 /* UIColor-Extension.swift */; };
 		7AF1CCEF2265AC24002DBE91 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AF1CCEE2265AC24002DBE91 /* RecommendViewController.swift */; };
@@ -98,6 +102,10 @@
 		7AC53760226E9BE0001CB912 /* RoomShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomShowViewController.swift; sourceTree = "<group>"; };
 		7AC53762226E9C0E001CB912 /* RoomNormalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomNormalViewController.swift; sourceTree = "<group>"; };
 		7AC53764226EA080001CB912 /* CustomNavigationVc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationVc.swift; sourceTree = "<group>"; };
+		7AC53786226EFC46001CB912 /* RoomShowHeadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomShowHeadView.swift; sourceTree = "<group>"; };
+		7AC53788226EFC5B001CB912 /* RoomShowBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomShowBottomView.swift; sourceTree = "<group>"; };
+		7AC5378A226EFC81001CB912 /* RoomShowHeadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomShowHeadView.xib; sourceTree = "<group>"; };
+		7AC5378C226EFC8C001CB912 /* RoomShowBottomView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomShowBottomView.xib; sourceTree = "<group>"; };
 		7AF1CCEA22648068002DBE91 /* PageContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageContentView.swift; sourceTree = "<group>"; };
 		7AF1CCEC22648331002DBE91 /* UIColor-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
 		7AF1CCEE2265AC24002DBE91 /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
@@ -455,6 +463,10 @@
 		7AC5375F226E9BA2001CB912 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7AC53786226EFC46001CB912 /* RoomShowHeadView.swift */,
+				7AC5378A226EFC81001CB912 /* RoomShowHeadView.xib */,
+				7AC53788226EFC5B001CB912 /* RoomShowBottomView.swift */,
+				7AC5378C226EFC8C001CB912 /* RoomShowBottomView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -531,6 +543,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A0F0647226089FA00DD89F5 /* LaunchScreen.storyboard in Resources */,
+				7AC5378D226EFC8C001CB912 /* RoomShowBottomView.xib in Resources */,
 				7AC53755226D9D48001CB912 /* AmuseMenuViewCell.xib in Resources */,
 				7AF1CCF32265D981002DBE91 /* CollectionHeaderView.xib in Resources */,
 				7AF1CCF72265DDEC002DBE91 /* CollectionNormalCell.xib in Resources */,
@@ -541,6 +554,7 @@
 				7AF1CD3A2269A5F9002DBE91 /* CollectionGameCell.xib in Resources */,
 				7AC53751226D912A001CB912 /* AmuseMenuView.xib in Resources */,
 				7AF1CD2C2269639F002DBE91 /* RecommendCycleView.xib in Resources */,
+				7AC5378B226EFC81001CB912 /* RoomShowHeadView.xib in Resources */,
 				7AF1CD3222697BB3002DBE91 /* CollectionCycleCell.xib in Resources */,
 				7AF1CCFB2266B457002DBE91 /* CollectionPrettyCell.xib in Resources */,
 				7A0F066622608F5F00DD89F5 /* Profile.storyboard in Resources */,
@@ -600,6 +614,7 @@
 				7AF1CD2A22696353002DBE91 /* RecommendCycleView.swift in Sources */,
 				7A0F066D22609A2D00DD89F5 /* MainViewController.swift in Sources */,
 				7AC53748226D624F001CB912 /* AmuseViewModel.swift in Sources */,
+				7AC53789226EFC5B001CB912 /* RoomShowBottomView.swift in Sources */,
 				7AF1CCF22265D981002DBE91 /* CollectionHeaderView.swift in Sources */,
 				7AF1CD3E2269C6AF002DBE91 /* GameViewModel.swift in Sources */,
 				7AC53765226EA080001CB912 /* CustomNavigationVc.swift in Sources */,
@@ -625,6 +640,7 @@
 				7A0F067E22645AFF00DD89F5 /* UIBarButtonItem-Extension.swift in Sources */,
 				7A0F06822264653D00DD89F5 /* Common.swift in Sources */,
 				7AF1CD3422699F15002DBE91 /* RecommendGameView.swift in Sources */,
+				7AC53787226EFC46001CB912 /* RoomShowHeadView.swift in Sources */,
 				7AF1CD242267297D002DBE91 /* AnchorGroupModel.swift in Sources */,
 				7AF1CD2222672643002DBE91 /* NSDate-Extension.swift in Sources */,
 				7AF1CD2822684C94002DBE91 /* CollectionBaseCell.swift in Sources */,

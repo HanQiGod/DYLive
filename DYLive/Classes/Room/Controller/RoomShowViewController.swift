@@ -10,13 +10,53 @@
 
 import UIKit
 
+private let kRoomShowHeaderViewH : CGFloat = 88.0
+private let kRoomShowFooterViewH : CGFloat = 88.0
+
 class RoomShowViewController: UIViewController {
+    
+    fileprivate var roomShowHeaderView : RoomShowHeadView = {
+        
+        let roomShowHeaderView = RoomShowHeadView.roomShowHeadView()
+        
+        roomShowHeaderView.frame = CGRect(x: 0, y: kStatusBarH, width: kScreenH, height: kRoomShowHeaderViewH)
+        
+        return roomShowHeaderView
+        
+    }()
+    fileprivate var roomShowBottomView : RoomShowBottomView = {
+        
+        let roomShowBottomView = RoomShowBottomView.roomShowBottomView()
+        
+        roomShowBottomView.frame = CGRect(x: 0, y: kScreenH-kRoomShowFooterViewH, width: kScreenW, height: kRoomShowFooterViewH)
+        
+        return roomShowBottomView
+        
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = .blue
+        // 设置 UI 界面
+        setUpUI()
 
     }
 
+}
+
+
+// MARK: 设置 UI 界面
+extension RoomShowViewController {
+    
+    fileprivate func setUpUI() {
+        
+        view.backgroundColor = .white
+        roomShowHeaderView.roomShowVc = self
+        view.addSubview(roomShowHeaderView)
+        
+        roomShowBottomView.roomShowVc = self
+        view.addSubview(roomShowBottomView)
+        
+    }
+    
 }

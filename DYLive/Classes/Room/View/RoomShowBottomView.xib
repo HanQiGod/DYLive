@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="RoomShowBottomView" customModule="DYLive" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="88"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" tag="110" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J90-jh-T4T">
+                    <rect key="frame" x="20" y="38" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="D0n-KH-QWu"/>
+                    </constraints>
+                    <state key="normal" image="dy_send_message"/>
+                    <connections>
+                        <action selector="roomShowBottomBtnsAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="o7h-iN-TDo"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="111" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VbY-FZ-FoA">
+                    <rect key="frame" x="70" y="38" width="40" height="40"/>
+                    <state key="normal" image="dy_share_btn_normal"/>
+                    <connections>
+                        <action selector="roomShowBottomBtnsAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="Et4-WY-vZ5"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="112" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zOu-Nl-gqH">
+                    <rect key="frame" x="275" y="38" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="SxN-bX-sfi"/>
+                        <constraint firstAttribute="height" constant="40" id="fQI-Lc-bq2"/>
+                    </constraints>
+                    <state key="normal" image="dy_send_gift_btn_big_pressed"/>
+                    <connections>
+                        <action selector="roomShowBottomBtnsAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="S80-D0-Gxi"/>
+                    </connections>
+                </button>
+                <button opaque="NO" tag="113" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M4p-3X-Xzm">
+                    <rect key="frame" x="325" y="38" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="aLJ-w9-Z5c"/>
+                        <constraint firstAttribute="width" constant="40" id="hPp-0P-qIU"/>
+                    </constraints>
+                    <state key="normal" image="btn_vdo_face_click"/>
+                    <connections>
+                        <action selector="roomShowBottomBtnsAction:" destination="iN0-l3-epB" eventType="touchUpInside" id="1Lf-xL-VpM"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="J90-jh-T4T" secondAttribute="bottom" constant="10" id="4gb-jw-TRY"/>
+                <constraint firstAttribute="trailing" secondItem="M4p-3X-Xzm" secondAttribute="trailing" constant="10" id="FGc-Ai-Fm3"/>
+                <constraint firstItem="zOu-Nl-gqH" firstAttribute="bottom" secondItem="J90-jh-T4T" secondAttribute="bottom" id="k2M-f1-M4r"/>
+                <constraint firstItem="J90-jh-T4T" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="k8g-3Q-O1C"/>
+                <constraint firstItem="VbY-FZ-FoA" firstAttribute="leading" secondItem="J90-jh-T4T" secondAttribute="trailing" constant="10" id="kyt-TL-gp1"/>
+                <constraint firstItem="M4p-3X-Xzm" firstAttribute="leading" secondItem="zOu-Nl-gqH" secondAttribute="trailing" constant="10" id="o3w-uZ-FrE"/>
+                <constraint firstItem="VbY-FZ-FoA" firstAttribute="bottom" secondItem="J90-jh-T4T" secondAttribute="bottom" id="ynF-cm-1k6"/>
+                <constraint firstItem="M4p-3X-Xzm" firstAttribute="bottom" secondItem="J90-jh-T4T" secondAttribute="bottom" id="z5h-gY-ILn"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="35.507246376811594" y="34.821428571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="btn_vdo_face_click" width="24" height="24"/>
+        <image name="dy_send_gift_btn_big_pressed" width="43" height="43"/>
+        <image name="dy_send_message" width="40" height="40"/>
+        <image name="dy_share_btn_normal" width="40" height="40"/>
+    </resources>
+</document>
