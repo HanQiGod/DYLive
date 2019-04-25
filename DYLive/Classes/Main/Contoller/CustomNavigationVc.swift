@@ -58,6 +58,5 @@ class CustomNavigationVc: UINavigationController {
         
         super.pushViewController(viewController, animated: animated)
     }
-    
 
 }

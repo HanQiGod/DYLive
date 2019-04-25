@@ -21,6 +21,18 @@
 		7A0F067E22645AFF00DD89F5 /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0F067D22645AFF00DD89F5 /* UIBarButtonItem-Extension.swift */; };
 		7A0F06802264635700DD89F5 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0F067F2264635700DD89F5 /* PageTitleView.swift */; };
 		7A0F06822264653D00DD89F5 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0F06812264653D00DD89F5 /* Common.swift */; };
+		7A82A1CB22713E5F00915D9C /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A82A1CA22713E5F00915D9C /* FollowViewController.swift */; };
+		7A82A1CE227140F400915D9C /* FollowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A82A1CD227140F400915D9C /* FollowViewModel.swift */; };
+		7A82A1D022714E7400915D9C /* FollowHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A82A1CF22714E7400915D9C /* FollowHeaderView.swift */; };
+		7A82A1D222714E9E00915D9C /* FollowHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A82A1D122714E9E00915D9C /* FollowHeaderView.xib */; };
+		7A82A1D42271545000915D9C /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A82A1D32271545000915D9C /* ProfileViewController.swift */; };
+		7A82A1D6227158A600915D9C /* LiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A82A1D5227158A600915D9C /* LiveViewController.swift */; };
+		7A82A1DD22715B5C00915D9C /* TableProfileNormalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A82A1DB22715B5C00915D9C /* TableProfileNormalCell.swift */; };
+		7A82A1DE22715B5C00915D9C /* TableProfileNormalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A82A1DC22715B5C00915D9C /* TableProfileNormalCell.xib */; };
+		7A82A1E02271626B00915D9C /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A82A1DF2271626B00915D9C /* ProfileHeaderView.swift */; };
+		7A82A1E22271627E00915D9C /* ProfileHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A82A1E12271627E00915D9C /* ProfileHeaderView.xib */; };
+		7A82A1EB2271885D00915D9C /* ProfileBtnsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A82A1E92271885D00915D9C /* ProfileBtnsCell.swift */; };
+		7A82A1EC2271885D00915D9C /* ProfileBtnsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A82A1EA2271885D00915D9C /* ProfileBtnsCell.xib */; };
 		7AC53742226D4787001CB912 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC53741226D4787001CB912 /* GameModel.swift */; };
 		7AC53744226D4B92001CB912 /* BaseGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC53743226D4B92001CB912 /* BaseGameModel.swift */; };
 		7AC53746226D5D84001CB912 /* AmuseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC53745226D5D84001CB912 /* AmuseViewController.swift */; };
@@ -94,6 +106,18 @@
 		7A0F067D22645AFF00DD89F5 /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
 		7A0F067F2264635700DD89F5 /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		7A0F06812264653D00DD89F5 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		7A82A1CA22713E5F00915D9C /* FollowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
+		7A82A1CD227140F400915D9C /* FollowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowViewModel.swift; sourceTree = "<group>"; };
+		7A82A1CF22714E7400915D9C /* FollowHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowHeaderView.swift; sourceTree = "<group>"; };
+		7A82A1D122714E9E00915D9C /* FollowHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FollowHeaderView.xib; sourceTree = "<group>"; };
+		7A82A1D32271545000915D9C /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		7A82A1D5227158A600915D9C /* LiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveViewController.swift; sourceTree = "<group>"; };
+		7A82A1DB22715B5C00915D9C /* TableProfileNormalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableProfileNormalCell.swift; sourceTree = "<group>"; };
+		7A82A1DC22715B5C00915D9C /* TableProfileNormalCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableProfileNormalCell.xib; sourceTree = "<group>"; };
+		7A82A1DF2271626B00915D9C /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		7A82A1E12271627E00915D9C /* ProfileHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileHeaderView.xib; sourceTree = "<group>"; };
+		7A82A1E92271885D00915D9C /* ProfileBtnsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileBtnsCell.swift; sourceTree = "<group>"; };
+		7A82A1EA2271885D00915D9C /* ProfileBtnsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileBtnsCell.xib; sourceTree = "<group>"; };
 		7AC53741226D4787001CB912 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		7AC53743226D4B92001CB912 /* BaseGameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseGameModel.swift; sourceTree = "<group>"; };
 		7AC53745226D5D84001CB912 /* AmuseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmuseViewController.swift; sourceTree = "<group>"; };
@@ -253,9 +277,10 @@
 		7A0F065122608A5A00DD89F5 /* Follow */ = {
 			isa = PBXGroup;
 			children = (
-				7A0F067822609A9300DD89F5 /* Contoller */,
+				7A82A1CC2271406000915D9C /* ViewModel */,
 				7A0F067922609A9300DD89F5 /* Model */,
 				7A0F067722609A9300DD89F5 /* View */,
+				7A0F067822609A9300DD89F5 /* Contoller */,
 			);
 			path = Follow;
 			sourceTree = "<group>";
@@ -263,9 +288,9 @@
 		7A0F065222608A5A00DD89F5 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				7A0F067622609A8400DD89F5 /* Contoller */,
 				7A0F067422609A8400DD89F5 /* Model */,
 				7A0F067522609A8400DD89F5 /* View */,
+				7A0F067622609A8400DD89F5 /* Contoller */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -273,9 +298,9 @@
 		7A0F065322608A5A00DD89F5 /* Live */ = {
 			isa = PBXGroup;
 			children = (
-				7A0F067322609A7300DD89F5 /* Contoller */,
 				7A0F067122609A7300DD89F5 /* Model */,
 				7A0F067222609A7300DD89F5 /* View */,
+				7A0F067322609A7300DD89F5 /* Contoller */,
 			);
 			path = Live;
 			sourceTree = "<group>";
@@ -386,6 +411,7 @@
 		7A0F067322609A7300DD89F5 /* Contoller */ = {
 			isa = PBXGroup;
 			children = (
+				7A82A1D5227158A600915D9C /* LiveViewController.swift */,
 			);
 			path = Contoller;
 			sourceTree = "<group>";
@@ -400,6 +426,12 @@
 		7A0F067522609A8400DD89F5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7A82A1DB22715B5C00915D9C /* TableProfileNormalCell.swift */,
+				7A82A1DC22715B5C00915D9C /* TableProfileNormalCell.xib */,
+				7A82A1DF2271626B00915D9C /* ProfileHeaderView.swift */,
+				7A82A1E12271627E00915D9C /* ProfileHeaderView.xib */,
+				7A82A1E92271885D00915D9C /* ProfileBtnsCell.swift */,
+				7A82A1EA2271885D00915D9C /* ProfileBtnsCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -407,6 +439,7 @@
 		7A0F067622609A8400DD89F5 /* Contoller */ = {
 			isa = PBXGroup;
 			children = (
+				7A82A1D32271545000915D9C /* ProfileViewController.swift */,
 			);
 			path = Contoller;
 			sourceTree = "<group>";
@@ -414,6 +447,8 @@
 		7A0F067722609A9300DD89F5 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7A82A1CF22714E7400915D9C /* FollowHeaderView.swift */,
+				7A82A1D122714E9E00915D9C /* FollowHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -421,6 +456,7 @@
 		7A0F067822609A9300DD89F5 /* Contoller */ = {
 			isa = PBXGroup;
 			children = (
+				7A82A1CA22713E5F00915D9C /* FollowViewController.swift */,
 			);
 			path = Contoller;
 			sourceTree = "<group>";
@@ -440,6 +476,14 @@
 				7AF1CD2122672643002DBE91 /* NSDate-Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		7A82A1CC2271406000915D9C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7A82A1CD227140F400915D9C /* FollowViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		7AC53749226D67BC001CB912 /* ViewModel */ = {
@@ -570,7 +614,9 @@
 				7AC5378D226EFC8C001CB912 /* RoomShowBottomView.xib in Resources */,
 				7AC53755226D9D48001CB912 /* AmuseMenuViewCell.xib in Resources */,
 				7AF1CCF32265D981002DBE91 /* CollectionHeaderView.xib in Resources */,
+				7A82A1E22271627E00915D9C /* ProfileHeaderView.xib in Resources */,
 				7AF1CCF72265DDEC002DBE91 /* CollectionNormalCell.xib in Resources */,
+				7A82A1DE22715B5C00915D9C /* TableProfileNormalCell.xib in Resources */,
 				7A0F0644226089FA00DD89F5 /* Assets.xcassets in Resources */,
 				7AC53799226FFD7C001CB912 /* ChatShowView.xib in Resources */,
 				7A0F0642226089F900DD89F5 /* Main.storyboard in Resources */,
@@ -580,6 +626,7 @@
 				7AC53751226D912A001CB912 /* AmuseMenuView.xib in Resources */,
 				7AF1CD2C2269639F002DBE91 /* RecommendCycleView.xib in Resources */,
 				7AC53791226FEB56001CB912 /* GiftView.xib in Resources */,
+				7A82A1EC2271885D00915D9C /* ProfileBtnsCell.xib in Resources */,
 				7AC5378B226EFC81001CB912 /* RoomShowHeadView.xib in Resources */,
 				7AC53795226FEDC2001CB912 /* GiftViewCell.xib in Resources */,
 				7AC5379D22700281001CB912 /* ChatViewCell.xib in Resources */,
@@ -588,6 +635,7 @@
 				7A0F066622608F5F00DD89F5 /* Profile.storyboard in Resources */,
 				7AF1CD3622699F38002DBE91 /* RecommendGameView.xib in Resources */,
 				7A0F066422608F4200DD89F5 /* Follow.storyboard in Resources */,
+				7A82A1D222714E9E00915D9C /* FollowHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -647,6 +695,7 @@
 				7AF1CD3E2269C6AF002DBE91 /* GameViewModel.swift in Sources */,
 				7AC53765226EA080001CB912 /* CustomNavigationVc.swift in Sources */,
 				7AC5375B226DBD71001CB912 /* BaseViewController.swift in Sources */,
+				7A82A1D022714E7400915D9C /* FollowHeaderView.swift in Sources */,
 				7AF1CCED22648331002DBE91 /* UIColor-Extension.swift in Sources */,
 				7AC5374D226D6C68001CB912 /* BaseAnchorViewController.swift in Sources */,
 				7AF1CD3C2269B8CF002DBE91 /* GameViewController.swift in Sources */,
@@ -657,6 +706,7 @@
 				7AC53763226E9C0E001CB912 /* RoomNormalViewController.swift in Sources */,
 				7AC53757226DAB38001CB912 /* FunnyViewController.swift in Sources */,
 				7AF1CD1D226712C9002DBE91 /* NetWorkTools.swift in Sources */,
+				7A82A1E02271626B00915D9C /* ProfileHeaderView.swift in Sources */,
 				7A0F06802264635700DD89F5 /* PageTitleView.swift in Sources */,
 				7AC5374B226D67CD001CB912 /* BaseViewModel.swift in Sources */,
 				7AF1CD3122697BB3002DBE91 /* CollectionCycleCell.swift in Sources */,
@@ -664,20 +714,26 @@
 				7AC53759226DAE29001CB912 /* FunnyViewModel.swift in Sources */,
 				7AC53744226D4B92001CB912 /* BaseGameModel.swift in Sources */,
 				7AF1CD2E2269778A002DBE91 /* CycleModel.swift in Sources */,
+				7A82A1CB22713E5F00915D9C /* FollowViewController.swift in Sources */,
 				7AC53746226D5D84001CB912 /* AmuseViewController.swift in Sources */,
 				7AC53794226FEDC2001CB912 /* GiftViewCell.swift in Sources */,
 				7AF1CCEB22648068002DBE91 /* PageContentView.swift in Sources */,
 				7A0F067E22645AFF00DD89F5 /* UIBarButtonItem-Extension.swift in Sources */,
 				7A0F06822264653D00DD89F5 /* Common.swift in Sources */,
+				7A82A1D42271545000915D9C /* ProfileViewController.swift in Sources */,
 				7AF1CD3422699F15002DBE91 /* RecommendGameView.swift in Sources */,
+				7A82A1D6227158A600915D9C /* LiveViewController.swift in Sources */,
 				7AC53787226EFC46001CB912 /* RoomShowHeadView.swift in Sources */,
 				7AF1CD242267297D002DBE91 /* AnchorGroupModel.swift in Sources */,
 				7AC53797226FFD6D001CB912 /* ChatShowView.swift in Sources */,
 				7AF1CD2222672643002DBE91 /* NSDate-Extension.swift in Sources */,
+				7A82A1CE227140F400915D9C /* FollowViewModel.swift in Sources */,
+				7A82A1EB2271885D00915D9C /* ProfileBtnsCell.swift in Sources */,
 				7AF1CD2822684C94002DBE91 /* CollectionBaseCell.swift in Sources */,
 				7AC5379C22700281001CB912 /* ChatViewCell.swift in Sources */,
 				7AC5374F226D90EF001CB912 /* AmuseMenuView.swift in Sources */,
 				7AF1CCFA2266B457002DBE91 /* CollectionPrettyCell.swift in Sources */,
+				7A82A1DD22715B5C00915D9C /* TableProfileNormalCell.swift in Sources */,
 				7AF1CD392269A5F9002DBE91 /* CollectionGameCell.swift in Sources */,
 				7AF1CCF62265DDEC002DBE91 /* CollectionNormalCell.swift in Sources */,
 				7AC53761226E9BE0001CB912 /* RoomShowViewController.swift in Sources */,
