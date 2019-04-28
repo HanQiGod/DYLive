@@ -21,6 +21,19 @@
 		7A0F067E22645AFF00DD89F5 /* UIBarButtonItem-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0F067D22645AFF00DD89F5 /* UIBarButtonItem-Extension.swift */; };
 		7A0F06802264635700DD89F5 /* PageTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0F067F2264635700DD89F5 /* PageTitleView.swift */; };
 		7A0F06822264653D00DD89F5 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A0F06812264653D00DD89F5 /* Common.swift */; };
+		7A73A0702275370900FC2CCA /* RoomAnchorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A73A06F2275370800FC2CCA /* RoomAnchorViewController.swift */; };
+		7A73A0722275376800FC2CCA /* RoomRankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A73A0712275376800FC2CCA /* RoomRankViewController.swift */; };
+		7A73A0742275377900FC2CCA /* RoomVipViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A73A0732275377900FC2CCA /* RoomVipViewController.swift */; };
+		7A73A076227543DA00FC2CCA /* NSString-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A73A075227543DA00FC2CCA /* NSString-Extension.swift */; };
+		7A73A0782275481000FC2CCA /* RoomChatHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A73A0772275481000FC2CCA /* RoomChatHeaderView.swift */; };
+		7A73A07A2275483400FC2CCA /* RoomChatHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A73A0792275483400FC2CCA /* RoomChatHeaderView.xib */; };
+		7A73A07C22754D8600FC2CCA /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A73A07B22754D8600FC2CCA /* BaseTableViewController.swift */; };
+		7A73A07F2275528000FC2CCA /* RoomRankCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A73A07D2275528000FC2CCA /* RoomRankCell.swift */; };
+		7A73A0802275528000FC2CCA /* RoomRankCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A73A07E2275528000FC2CCA /* RoomRankCell.xib */; };
+		7A73A0822275569000FC2CCA /* RoomRankHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A73A0812275569000FC2CCA /* RoomRankHeaderView.swift */; };
+		7A73A084227556A000FC2CCA /* RoomRankHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A73A083227556A000FC2CCA /* RoomRankHeaderView.xib */; };
+		7A73A08722757A2600FC2CCA /* AnchorDynamicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A73A08522757A2600FC2CCA /* AnchorDynamicCell.swift */; };
+		7A73A08822757A2600FC2CCA /* AnchorDynamicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A73A08622757A2600FC2CCA /* AnchorDynamicCell.xib */; };
 		7A82A1CB22713E5F00915D9C /* FollowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A82A1CA22713E5F00915D9C /* FollowViewController.swift */; };
 		7A82A1CE227140F400915D9C /* FollowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A82A1CD227140F400915D9C /* FollowViewModel.swift */; };
 		7A82A1D022714E7400915D9C /* FollowHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A82A1CF22714E7400915D9C /* FollowHeaderView.swift */; };
@@ -113,6 +126,19 @@
 		7A0F067D22645AFF00DD89F5 /* UIBarButtonItem-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem-Extension.swift"; sourceTree = "<group>"; };
 		7A0F067F2264635700DD89F5 /* PageTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageTitleView.swift; sourceTree = "<group>"; };
 		7A0F06812264653D00DD89F5 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		7A73A06F2275370800FC2CCA /* RoomAnchorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomAnchorViewController.swift; sourceTree = "<group>"; };
+		7A73A0712275376800FC2CCA /* RoomRankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomRankViewController.swift; sourceTree = "<group>"; };
+		7A73A0732275377900FC2CCA /* RoomVipViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomVipViewController.swift; sourceTree = "<group>"; };
+		7A73A075227543DA00FC2CCA /* NSString-Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSString-Extension.swift"; sourceTree = "<group>"; };
+		7A73A0772275481000FC2CCA /* RoomChatHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomChatHeaderView.swift; sourceTree = "<group>"; };
+		7A73A0792275483400FC2CCA /* RoomChatHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomChatHeaderView.xib; sourceTree = "<group>"; };
+		7A73A07B22754D8600FC2CCA /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		7A73A07D2275528000FC2CCA /* RoomRankCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomRankCell.swift; sourceTree = "<group>"; };
+		7A73A07E2275528000FC2CCA /* RoomRankCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomRankCell.xib; sourceTree = "<group>"; };
+		7A73A0812275569000FC2CCA /* RoomRankHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomRankHeaderView.swift; sourceTree = "<group>"; };
+		7A73A083227556A000FC2CCA /* RoomRankHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomRankHeaderView.xib; sourceTree = "<group>"; };
+		7A73A08522757A2600FC2CCA /* AnchorDynamicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorDynamicCell.swift; sourceTree = "<group>"; };
+		7A73A08622757A2600FC2CCA /* AnchorDynamicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnchorDynamicCell.xib; sourceTree = "<group>"; };
 		7A82A1CA22713E5F00915D9C /* FollowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowViewController.swift; sourceTree = "<group>"; };
 		7A82A1CD227140F400915D9C /* FollowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowViewModel.swift; sourceTree = "<group>"; };
 		7A82A1CF22714E7400915D9C /* FollowHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowHeaderView.swift; sourceTree = "<group>"; };
@@ -362,6 +388,7 @@
 				7AC5375A226DBD71001CB912 /* BaseViewController.swift */,
 				7AC5374C226D6C68001CB912 /* BaseAnchorViewController.swift */,
 				7AC53764226EA080001CB912 /* CustomNavigationVc.swift */,
+				7A73A07B22754D8600FC2CCA /* BaseTableViewController.swift */,
 			);
 			path = Contoller;
 			sourceTree = "<group>";
@@ -488,6 +515,7 @@
 				7A0F067D22645AFF00DD89F5 /* UIBarButtonItem-Extension.swift */,
 				7AF1CCEC22648331002DBE91 /* UIColor-Extension.swift */,
 				7AF1CD2122672643002DBE91 /* NSDate-Extension.swift */,
+				7A73A075227543DA00FC2CCA /* NSString-Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -524,6 +552,9 @@
 				7AC53760226E9BE0001CB912 /* RoomShowViewController.swift */,
 				7AC53762226E9C0E001CB912 /* RoomNormalViewController.swift */,
 				7A82A1F92273089300915D9C /* RoomChatViewController.swift */,
+				7A73A06F2275370800FC2CCA /* RoomAnchorViewController.swift */,
+				7A73A0712275376800FC2CCA /* RoomRankViewController.swift */,
+				7A73A0732275377900FC2CCA /* RoomVipViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -556,6 +587,14 @@
 				7A82A1F52272DBF500915D9C /* RoomNormalVideoView.xib */,
 				7A82A1F32272DBA900915D9C /* RoomNormalContentView.swift */,
 				7A82A1F72272DC2000915D9C /* RoomNormalContentView.xib */,
+				7A73A0772275481000FC2CCA /* RoomChatHeaderView.swift */,
+				7A73A0792275483400FC2CCA /* RoomChatHeaderView.xib */,
+				7A73A07D2275528000FC2CCA /* RoomRankCell.swift */,
+				7A73A07E2275528000FC2CCA /* RoomRankCell.xib */,
+				7A73A0812275569000FC2CCA /* RoomRankHeaderView.swift */,
+				7A73A083227556A000FC2CCA /* RoomRankHeaderView.xib */,
+				7A73A08522757A2600FC2CCA /* AnchorDynamicCell.swift */,
+				7A73A08622757A2600FC2CCA /* AnchorDynamicCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -631,6 +670,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A73A0802275528000FC2CCA /* RoomRankCell.xib in Resources */,
 				7A82A1F02272ABF800915D9C /* RoomNormalFooterView.xib in Resources */,
 				7A0F0647226089FA00DD89F5 /* LaunchScreen.storyboard in Resources */,
 				7AC5378D226EFC8C001CB912 /* RoomShowBottomView.xib in Resources */,
@@ -640,6 +680,7 @@
 				7AF1CCF72265DDEC002DBE91 /* CollectionNormalCell.xib in Resources */,
 				7A82A1DE22715B5C00915D9C /* TableProfileNormalCell.xib in Resources */,
 				7A0F0644226089FA00DD89F5 /* Assets.xcassets in Resources */,
+				7A73A08822757A2600FC2CCA /* AnchorDynamicCell.xib in Resources */,
 				7AC53799226FFD7C001CB912 /* ChatShowView.xib in Resources */,
 				7A0F0642226089F900DD89F5 /* Main.storyboard in Resources */,
 				7A0F066222608F1D00DD89F5 /* Live.storyboard in Resources */,
@@ -650,6 +691,7 @@
 				7AF1CD2C2269639F002DBE91 /* RecommendCycleView.xib in Resources */,
 				7AC53791226FEB56001CB912 /* GiftView.xib in Resources */,
 				7A82A1EC2271885D00915D9C /* ProfileBtnsCell.xib in Resources */,
+				7A73A084227556A000FC2CCA /* RoomRankHeaderView.xib in Resources */,
 				7AC5378B226EFC81001CB912 /* RoomShowHeadView.xib in Resources */,
 				7AC53795226FEDC2001CB912 /* GiftViewCell.xib in Resources */,
 				7A82A1F62272DBF500915D9C /* RoomNormalVideoView.xib in Resources */,
@@ -659,6 +701,7 @@
 				7A0F066622608F5F00DD89F5 /* Profile.storyboard in Resources */,
 				7AF1CD3622699F38002DBE91 /* RecommendGameView.xib in Resources */,
 				7A0F066422608F4200DD89F5 /* Follow.storyboard in Resources */,
+				7A73A07A2275483400FC2CCA /* RoomChatHeaderView.xib in Resources */,
 				7A82A1D222714E9E00915D9C /* FollowHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -717,6 +760,7 @@
 				7A0F066D22609A2D00DD89F5 /* MainViewController.swift in Sources */,
 				7AC53748226D624F001CB912 /* AmuseViewModel.swift in Sources */,
 				7AC53789226EFC5B001CB912 /* RoomShowBottomView.swift in Sources */,
+				7A73A0782275481000FC2CCA /* RoomChatHeaderView.swift in Sources */,
 				7AF1CCF22265D981002DBE91 /* CollectionHeaderView.swift in Sources */,
 				7AF1CD3E2269C6AF002DBE91 /* GameViewModel.swift in Sources */,
 				7AC53765226EA080001CB912 /* CustomNavigationVc.swift in Sources */,
@@ -734,6 +778,8 @@
 				7A82A1F42272DBA900915D9C /* RoomNormalContentView.swift in Sources */,
 				7AF1CD1D226712C9002DBE91 /* NetWorkTools.swift in Sources */,
 				7A82A1E02271626B00915D9C /* ProfileHeaderView.swift in Sources */,
+				7A73A07F2275528000FC2CCA /* RoomRankCell.swift in Sources */,
+				7A73A0822275569000FC2CCA /* RoomRankHeaderView.swift in Sources */,
 				7A0F06802264635700DD89F5 /* PageTitleView.swift in Sources */,
 				7AC5374B226D67CD001CB912 /* BaseViewModel.swift in Sources */,
 				7AF1CD3122697BB3002DBE91 /* CollectionCycleCell.swift in Sources */,
@@ -741,18 +787,24 @@
 				7AC53759226DAE29001CB912 /* FunnyViewModel.swift in Sources */,
 				7A82A1FA2273089300915D9C /* RoomChatViewController.swift in Sources */,
 				7AC53744226D4B92001CB912 /* BaseGameModel.swift in Sources */,
+				7A73A0702275370900FC2CCA /* RoomAnchorViewController.swift in Sources */,
 				7AF1CD2E2269778A002DBE91 /* CycleModel.swift in Sources */,
 				7A82A1CB22713E5F00915D9C /* FollowViewController.swift in Sources */,
 				7AC53746226D5D84001CB912 /* AmuseViewController.swift in Sources */,
+				7A73A0722275376800FC2CCA /* RoomRankViewController.swift in Sources */,
 				7AC53794226FEDC2001CB912 /* GiftViewCell.swift in Sources */,
 				7AF1CCEB22648068002DBE91 /* PageContentView.swift in Sources */,
+				7A73A08722757A2600FC2CCA /* AnchorDynamicCell.swift in Sources */,
 				7A0F067E22645AFF00DD89F5 /* UIBarButtonItem-Extension.swift in Sources */,
 				7A0F06822264653D00DD89F5 /* Common.swift in Sources */,
+				7A73A0742275377900FC2CCA /* RoomVipViewController.swift in Sources */,
+				7A73A076227543DA00FC2CCA /* NSString-Extension.swift in Sources */,
 				7A82A1D42271545000915D9C /* ProfileViewController.swift in Sources */,
 				7AF1CD3422699F15002DBE91 /* RecommendGameView.swift in Sources */,
 				7A82A1D6227158A600915D9C /* LiveViewController.swift in Sources */,
 				7AC53787226EFC46001CB912 /* RoomShowHeadView.swift in Sources */,
 				7AF1CD242267297D002DBE91 /* AnchorGroupModel.swift in Sources */,
+				7A73A07C22754D8600FC2CCA /* BaseTableViewController.swift in Sources */,
 				7AC53797226FFD6D001CB912 /* ChatShowView.swift in Sources */,
 				7AF1CD2222672643002DBE91 /* NSDate-Extension.swift in Sources */,
 				7A82A1CE227140F400915D9C /* FollowViewModel.swift in Sources */,

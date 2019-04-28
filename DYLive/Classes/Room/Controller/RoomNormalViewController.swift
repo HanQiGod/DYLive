@@ -12,7 +12,7 @@ import UIKit
 
 private let kFooterMargin : CGFloat = kIsPhoneX ? 20.0 : 0.0
 private let kBarButtonItemW : CGFloat = 49.0
-private let kNormalFooterViewH : CGFloat = 60.0
+private let kNormalFooterViewH : CGFloat = 55.0
 private let kNormalVideoViewH : CGFloat = kScreenH * 3 / 7
 
 
@@ -60,7 +60,7 @@ class RoomNormalViewController: UIViewController, UIGestureRecognizerDelegate {
     fileprivate lazy var contentView : RoomNormalContentView = {[weak self] in
         let contentView = RoomNormalContentView.roomNormalContentView()
         contentView.frame = CGRect(x: 0, y: kNormalVideoViewH, width: kScreenW, height: kScreenH - kNormalVideoViewH - kFooterMargin - kNormalFooterViewH)
-        contentView.childVcs = [RoomChatViewController(),UIViewController(),UIViewController(),UIViewController()]
+        contentView.childVcs = [RoomChatViewController(),RoomAnchorViewController(),RoomRankViewController(),RoomVipViewController()]
         contentView.parentViewController = self
         contentView.delegate = self
         return contentView
@@ -163,6 +163,7 @@ extension RoomNormalViewController : RoomNormalVideoViewDelegate {
     
     func roomNormalVideoView(titleView: RoomNormalVideoView, selectedIndex index: Int) {
         contentView.setContentIndex(currentIndex: index)
+        footerView.isHidden = index > 0 ? true : false
     }
     
 }
@@ -173,6 +174,8 @@ extension RoomNormalViewController : RoomNormalContentViewDelegate {
     
     func roomNormalContentView(contentView: RoomNormalContentView, progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
         videoView.setTitleWithProgress(progress: progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
+        footerView.isHidden = targetIndex > 0 ? true : false
     }
     
 }
+

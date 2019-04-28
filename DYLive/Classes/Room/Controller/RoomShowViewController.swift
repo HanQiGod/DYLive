@@ -53,7 +53,11 @@ extension RoomShowViewController {
     
     fileprivate func setUpUI() {
         
-        view.backgroundColor = .green
+        let img = UIImageView(image: UIImage(named: "IMG_5042"))
+        img.frame = view.bounds
+        img.contentMode = .scaleAspectFill
+        view.addSubview(img)
+        
         roomShowHeaderView.roomShowVc = self
         view.addSubview(roomShowHeaderView)
         
