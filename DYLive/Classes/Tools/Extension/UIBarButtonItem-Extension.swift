@@ -28,11 +28,12 @@ extension UIBarButtonItem {
     
     // 方法二：构造函数
     // 便利构造函数: 1> 以 convenience 开头   2> 在构造函数中必须明确调用一个设计的构造函数(self)
-    convenience init(imageName: String, highImageName: String = "", size: CGSize = CGSize.zero) {
+    convenience init(imageName: String, highImageName: String = "", size: CGSize = CGSize.zero, viewController: UIViewController, selector: Selector) {
         
         print(size)
         //1. 创建 UIButton
         let btn = UIButton()
+        btn.addTarget(viewController, action: selector, for: .touchUpInside)
         
         //2. 设置 btn 图片
         btn.setImage(UIImage(named: imageName), for: .normal)

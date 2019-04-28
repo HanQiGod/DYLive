@@ -60,7 +60,7 @@ extension ProfileHeaderView {
 }
 
 
-// MARK: 遵守
+// MARK: 遵守 UICollectionViewDataSource 协议
 extension ProfileHeaderView : UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

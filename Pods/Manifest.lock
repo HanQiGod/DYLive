@@ -1,20 +1,24 @@
 PODS:
   - Alamofire (4.8.1)
+  - ExpandingMenu (0.4.0)
   - Kingfisher (4.10.1)
 
 DEPENDENCIES:
   - Alamofire
+  - ExpandingMenu (~> 0.4)
   - Kingfisher
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - Alamofire
+    - ExpandingMenu
     - Kingfisher
 
 SPEC CHECKSUMS:
   Alamofire: 16ce2c353fb72865124ddae8a57c5942388f4f11
+  ExpandingMenu: 3187a4ed1aa1aea85418e444c213e4cd6063c122
   Kingfisher: c148cd7b47ebde9989f6bc7c27dcaa79d81279a0
 
-PODFILE CHECKSUM: 53cb815d2f4919690fd98165d8ba0c64c216cf29
+PODFILE CHECKSUM: 514640a731ae70ee3220acfdadf4618f99c7b92c
 
 COCOAPODS: 1.5.0

@@ -5,7 +5,11 @@ use_frameworks!
 
 target 'DYLive' do
 
+# 网络请求框架
 pod 'Alamofire'
+# 图片加载框架
 pod 'Kingfisher'
+# 菜单框架 - https://github.com/monoqlo/ExpandingMenu
+pod 'ExpandingMenu', '~> 0.4'
 
 end

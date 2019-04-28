@@ -75,13 +75,13 @@ extension HomeViewController {
     private func setUpNavigationBar() {
         
         //1. 设置左侧 item
-        navigationItem.leftBarButtonItem = UIBarButtonItem(imageName: "logo")
+        navigationItem.leftBarButtonItem = UIBarButtonItem(imageName: "logo", viewController: self, selector: #selector(logoAction))
         
         //2. 设置右侧 item
         let size = CGSize(width: 40, height: 40)
-        let historyItem = UIBarButtonItem(imageName: "image_my_history", highImageName: "Image_my_history_click", size: size)
-        let searchItem = UIBarButtonItem(imageName: "btn_search", highImageName: "btn_search_clicked", size: size)
-        let grcodeItem = UIBarButtonItem(imageName: "Image_scan", highImageName: "Image_scan_click", size: size)
+        let historyItem = UIBarButtonItem(imageName: "image_my_history", highImageName: "Image_my_history_click", size: size, viewController: self, selector: #selector(historyAction))
+        let searchItem = UIBarButtonItem(imageName: "btn_search", highImageName: "btn_search_clicked", size: size, viewController: self, selector: #selector(searchAction))
+        let grcodeItem = UIBarButtonItem(imageName: "Image_scan", highImageName: "Image_scan_click", size: size, viewController: self, selector: #selector(scanAction))
         
         navigationItem.rightBarButtonItems = [historyItem,searchItem,grcodeItem]
         
@@ -106,6 +106,28 @@ extension HomeViewController : PageContentViewDelegate {
     
     func pageContentView(contentView: PageContentView, progress: CGFloat, sourceIndex: Int, targetIndex: Int) {
         pageTitleView.setTitleWithProgress(progress: progress, sourceIndex: sourceIndex, targetIndex: targetIndex)
+    }
+    
+}
+
+
+// MARK: 监听事件点击
+extension HomeViewController {
+    
+    @objc fileprivate func logoAction() {
+        print("logo")
+    }
+    
+    @objc fileprivate func historyAction() {
+        print("历史记录")
+    }
+    
+    @objc fileprivate func searchAction() {
+        print("搜索")
+    }
+    
+    @objc fileprivate func scanAction() {
+        print("浏览")
     }
     
 }

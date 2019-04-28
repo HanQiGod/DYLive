@@ -54,7 +54,7 @@ class ProfileViewController: BaseViewController {
     
     fileprivate lazy var leftBarItem : UIBarButtonItem = {
         
-        let leftBarItem = UIBarButtonItem.init(imageName: "image_my_settings", highImageName: "", size: CGSize(width: kBarButtonItemW, height: kBarButtonItemW))
+        let leftBarItem = UIBarButtonItem.init(imageName: "dyla_编辑", highImageName: "", size: CGSize(width: kBarButtonItemW, height: kBarButtonItemW), viewController: self, selector: #selector(editAction))
         
         return leftBarItem
         
@@ -62,7 +62,7 @@ class ProfileViewController: BaseViewController {
     
     fileprivate lazy var rightBarItem : UIBarButtonItem = {
         
-        let rightBarItem = UIBarButtonItem.init(imageName: "siteMessageUser", highImageName: "", size: CGSize(width: kBarButtonItemW, height: kBarButtonItemW))
+        let rightBarItem = UIBarButtonItem.init(imageName: "video_player_danmu_send", highImageName: "", size: CGSize(width: kBarButtonItemW, height: kBarButtonItemW), viewController: self, selector: #selector(msgAction))
         
         return rightBarItem
         
@@ -144,3 +144,16 @@ extension ProfileViewController : UITableViewDataSource {
     
 }
 
+
+// MARK: 监听事件点击
+extension ProfileViewController {
+    
+    @objc fileprivate func editAction() {
+        print("编辑")
+    }
+    
+    @objc fileprivate func msgAction() {
+        print("消息")
+    }
+    
+}
