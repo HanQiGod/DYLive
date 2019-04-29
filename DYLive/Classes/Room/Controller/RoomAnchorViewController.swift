@@ -16,16 +16,25 @@ private let kAnchorDynamicCellID = "kAnchorDynamicCellID"
 
 
 class RoomAnchorViewController: BaseTableViewController {
+    
+    // MARK: 懒加载属性
+    fileprivate lazy var dynamicHeaderView : AnchorDynamicHeaderView = {
+        let dynamicHeaderView = AnchorDynamicHeaderView.dynamicHeaderView()
+        dynamicHeaderView.frame = CGRect(x: 0, y: -kAnchorViewH, width: kScreenW, height: kAnchorViewH)
+        return dynamicHeaderView
+    }()
 
 }
 
 
-// MARK: 重写
+// MARK: 重写 setUpUI
 extension RoomAnchorViewController {
     override func setUpUI() {
         count = 10
         tableView.rowHeight = 300
         tableView.register(UINib(nibName: "AnchorDynamicCell", bundle: nil), forCellReuseIdentifier: kAnchorDynamicCellID)
+        tableView.addSubview(dynamicHeaderView)
+        tableView.contentInset = UIEdgeInsets(top: kAnchorViewH, left: 0, bottom: 0, right: 0)
         super.setUpUI()
     }
 }

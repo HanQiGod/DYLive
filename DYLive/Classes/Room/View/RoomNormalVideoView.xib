@@ -18,6 +18,9 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rJA-Rl-osd">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="258"/>
                     <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_cell_default_phone" translatesAutoresizingMaskIntoConstraints="NO" id="CnI-gb-bBn">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="258"/>
+                        </imageView>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bDm-oz-PO8">
                             <rect key="frame" x="0.0" y="202" width="375" height="56"/>
                             <subviews>
@@ -89,8 +92,12 @@
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstItem="bDm-oz-PO8" firstAttribute="leading" secondItem="rJA-Rl-osd" secondAttribute="leading" id="D2v-uz-t68"/>
+                        <constraint firstAttribute="bottom" secondItem="CnI-gb-bBn" secondAttribute="bottom" id="F8r-tg-3oz"/>
                         <constraint firstAttribute="trailing" secondItem="bDm-oz-PO8" secondAttribute="trailing" id="KaN-dc-2x4"/>
                         <constraint firstAttribute="bottom" secondItem="bDm-oz-PO8" secondAttribute="bottom" id="Rov-Wq-fVP"/>
+                        <constraint firstAttribute="trailing" secondItem="CnI-gb-bBn" secondAttribute="trailing" id="UCU-aE-f3I"/>
+                        <constraint firstItem="CnI-gb-bBn" firstAttribute="top" secondItem="rJA-Rl-osd" secondAttribute="top" id="hUz-fH-fyl"/>
+                        <constraint firstItem="CnI-gb-bBn" firstAttribute="leading" secondItem="rJA-Rl-osd" secondAttribute="leading" id="hou-OW-ckK"/>
                     </constraints>
                 </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Zv-6s-9ET">
@@ -144,5 +151,6 @@
     <resources>
         <image name="Img_orange" width="3.5" height="15"/>
         <image name="btn_video_pause_white18" width="20" height="20"/>
+        <image name="live_cell_default_phone" width="103.5" height="103.5"/>
     </resources>
 </document>

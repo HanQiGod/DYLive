@@ -53,6 +53,8 @@
 		7A82A1F62272DBF500915D9C /* RoomNormalVideoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A82A1F52272DBF500915D9C /* RoomNormalVideoView.xib */; };
 		7A82A1F82272DC2000915D9C /* RoomNormalContentView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A82A1F72272DC2000915D9C /* RoomNormalContentView.xib */; };
 		7A82A1FA2273089300915D9C /* RoomChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A82A1F92273089300915D9C /* RoomChatViewController.swift */; };
+		7A845A3D227688DB00ABF25C /* AnchorDynamicHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A845A3C227688DB00ABF25C /* AnchorDynamicHeaderView.swift */; };
+		7A845A3F227688EC00ABF25C /* AnchorDynamicHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A845A3E227688EC00ABF25C /* AnchorDynamicHeaderView.xib */; };
 		7AC53742226D4787001CB912 /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC53741226D4787001CB912 /* GameModel.swift */; };
 		7AC53744226D4B92001CB912 /* BaseGameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC53743226D4B92001CB912 /* BaseGameModel.swift */; };
 		7AC53746226D5D84001CB912 /* AmuseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AC53745226D5D84001CB912 /* AmuseViewController.swift */; };
@@ -158,6 +160,8 @@
 		7A82A1F52272DBF500915D9C /* RoomNormalVideoView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomNormalVideoView.xib; sourceTree = "<group>"; };
 		7A82A1F72272DC2000915D9C /* RoomNormalContentView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomNormalContentView.xib; sourceTree = "<group>"; };
 		7A82A1F92273089300915D9C /* RoomChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomChatViewController.swift; sourceTree = "<group>"; };
+		7A845A3C227688DB00ABF25C /* AnchorDynamicHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnchorDynamicHeaderView.swift; sourceTree = "<group>"; };
+		7A845A3E227688EC00ABF25C /* AnchorDynamicHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnchorDynamicHeaderView.xib; sourceTree = "<group>"; };
 		7AC53741226D4787001CB912 /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		7AC53743226D4B92001CB912 /* BaseGameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseGameModel.swift; sourceTree = "<group>"; };
 		7AC53745226D5D84001CB912 /* AmuseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AmuseViewController.swift; sourceTree = "<group>"; };
@@ -595,6 +599,8 @@
 				7A73A083227556A000FC2CCA /* RoomRankHeaderView.xib */,
 				7A73A08522757A2600FC2CCA /* AnchorDynamicCell.swift */,
 				7A73A08622757A2600FC2CCA /* AnchorDynamicCell.xib */,
+				7A845A3C227688DB00ABF25C /* AnchorDynamicHeaderView.swift */,
+				7A845A3E227688EC00ABF25C /* AnchorDynamicHeaderView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -690,6 +696,7 @@
 				7AC53751226D912A001CB912 /* AmuseMenuView.xib in Resources */,
 				7AF1CD2C2269639F002DBE91 /* RecommendCycleView.xib in Resources */,
 				7AC53791226FEB56001CB912 /* GiftView.xib in Resources */,
+				7A845A3F227688EC00ABF25C /* AnchorDynamicHeaderView.xib in Resources */,
 				7A82A1EC2271885D00915D9C /* ProfileBtnsCell.xib in Resources */,
 				7A73A084227556A000FC2CCA /* RoomRankHeaderView.xib in Resources */,
 				7AC5378B226EFC81001CB912 /* RoomShowHeadView.xib in Resources */,
@@ -757,6 +764,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7AF1CD2A22696353002DBE91 /* RecommendCycleView.swift in Sources */,
+				7A845A3D227688DB00ABF25C /* AnchorDynamicHeaderView.swift in Sources */,
 				7A0F066D22609A2D00DD89F5 /* MainViewController.swift in Sources */,
 				7AC53748226D624F001CB912 /* AmuseViewModel.swift in Sources */,
 				7AC53789226EFC5B001CB912 /* RoomShowBottomView.swift in Sources */,
